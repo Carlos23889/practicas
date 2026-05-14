@@ -62,7 +62,7 @@ formulario.addEventListener("submit", (e) => {
   };
 
 
-  // AÑADE EL NUEVO ARRIBA
+
   estudios.unshift(nuevoEstudio);
 
 
