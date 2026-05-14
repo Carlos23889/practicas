@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* VARIABLES */
+
+:root {
+  --fondo: #f5f1ea;
+  --texto: #2b2b2b;
+  --primario: #8b5e3c;
+  --secundario: #ffffff;
+}
+
+
+/* MODO OSCURO */
+
+.dark-mode {
+  --fondo: #1e1e1e;
+  --texto: #f5f5f5;
+  --primario: #c28b5c;
+  --secundario: #2b2b2b;
+}
+
+
+
+body {
+  font-family: Arial, sans-serif;
+
+  background-color: var(--fondo);
+  color: var(--texto);
+
+  max-width: 1400px;
+  margin: auto;
+
+  padding: 20px;
+
+  transition: 0.3s;
+}
+
+
+/* BOTÓN TEMA */
+
+#tema-btn {
+  position: fixed;
+
+  top: 20px;
+  right: 20px;
+
+  width: 60px;
+  height: 60px;
+
+  border: none;
+  border-radius: 50%;
+
+  background-color: var(--primario);
+  color: white;
+
+  font-size: 22px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+#tema-btn:hover {
+  transform: scale(1.1);
+}
+
+
+/* MENÚ */
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+  background-color: var(--primario);
+
+  padding: 20px;
+
+  margin-bottom: 50px;
+}
+
+.menu a {
+  color: white;
+
+  text-decoration: none;
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  opacity: 0.7;
+}
+
+
+
+header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+header img {
+  width: 220px;
+  height: 220px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+  object-position: center top;
+
+  border: 5px solid var(--primario);
+}
+
+header h1 {
+  margin-top: 20px;
+
+  font-size: 50px;
+  color: var(--primario);
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 22px;
+}
+
+
+
+section {
+  background-color: var(--secundario);
+
+  padding: 40px;
+  margin-bottom: 40px;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: var(--primario);
+
+  margin-bottom: 30px;
+
+  font-size: 45px;
+}
+
+
+/* HABILIDADES */
+
+.grid-habilidades {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(150px, 1fr));
+
+  gap: 20px;
+}
+
+.skill {
+  background-color: var(--primario);
+  color: white;
+
+  height: 120px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 20px;
+  font-weight: bold;
+
+  text-align: center;
+
+  transition: 0.3s;
+}
+
+.skill:hover {
+  transform: scale(1.05);
+}
+
+
+/* PROYECTOS */
+
+.contenedor-proyectos {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  gap: 25px;
+}
+
+.tarjeta {
+  background-color: var(--primario);
+  color: white;
+
+  width: 250px;
+  height: 250px;
+
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  transition: 0.3s;
+}
+
+.tarjeta:hover {
+  transform: translateY(-8px);
+}
+
+.tarjeta h3 {
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+
+
+/* GITHUB */
+
+.github-buscador {
+  display: flex;
+  gap: 15px;
+
+  margin-bottom: 30px;
+
+  flex-wrap: wrap;
+}
+
+.github-buscador input {
+  flex: 1;
+}
+
+#resultado-github {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 20px;
+}
+
+.repo {
+  background-color: var(--primario);
+  color: white;
+
+  padding: 20px;
+
+  min-height: 220px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  transition: 0.3s;
+}
+
+.repo:hover {
+  transform: scale(1.03);
+}
+
+.repo h3 {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.repo p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.repo a {
+  color: white;
+  font-weight: bold;
+
+  text-decoration: none;
+
+  margin-top: 10px;
+}
+
+
+/* FORMULARIOS */
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  padding: 15px;
+
+  margin-bottom: 20px;
+
+  border: 1px solid #ccc;
+
+  font-size: 16px;
+}
+
+button {
+  background-color: var(--primario);
+  color: white;
+
+  border: none;
+
+  padding: 15px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+/* ESTUDIOS */
+
+#lista-estudios {
+  margin-top: 30px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 20px;
+}
+
+.estudio {
+  background-color: var(--primario);
+  color: white;
+
+  min-height: 220px;
+
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  transition: 0.3s;
+}
+
+.estudio:hover {
+  transform: scale(1.03);
+}
+
+.estudio h3 {
+  margin-bottom: 15px;
+}
+
+.btn-eliminar {
+  margin-top: 20px;
+
+  background-color: white;
+  color: var(--primario);
+
+  font-weight: bold;
+}
+
+
+
+@media (max-width: 900px) {
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenedor-proyectos {
+    flex-direction: column;
+    align-items: center;
+  }
+}
