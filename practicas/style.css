@@ -5,7 +5,7 @@
 }
 
 
-/* VARIABLES */
+
 
 :root {
   --fondo: #f5f1ea;
@@ -15,7 +15,7 @@
 }
 
 
-/* MODO OSCURO */
+
 
 .dark-mode {
   --fondo: #1e1e1e;
@@ -25,7 +25,7 @@
 }
 
 
-/* BODY */
+
 
 body {
   font-family: Arial, sans-serif;
@@ -42,7 +42,6 @@ body {
 }
 
 
-/* BOTÓN TEMA */
 
 #tema-btn {
   position: fixed;
@@ -71,7 +70,7 @@ body {
 }
 
 
-/* MENÚ */
+
 
 .menu {
   display: flex;
@@ -99,7 +98,6 @@ body {
 }
 
 
-/* HEADER */
 
 header {
   text-align: center;
@@ -131,7 +129,7 @@ header p {
 }
 
 
-/* SECCIONES */
+
 
 section {
   background-color: var(--secundario);
@@ -151,7 +149,7 @@ h2 {
 }
 
 
-/* HABILIDADES */
+
 
 .grid-habilidades {
   display: grid;
@@ -185,7 +183,7 @@ h2 {
 }
 
 
-/* PROYECTOS */
+
 
 .contenedor-proyectos {
   display: flex;
@@ -225,7 +223,6 @@ h2 {
 }
 
 
-/* FORMULARIOS */
 
 form {
   display: flex;
@@ -261,7 +258,6 @@ button:hover {
 }
 
 
-/* ESTUDIOS */
 
 #lista-estudios {
   margin-top: 30px;
@@ -298,7 +294,7 @@ button:hover {
 }
 
 
-/* RESPONSIVE */
+
 
 @media (max-width: 900px) {
 
